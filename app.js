@@ -7,11 +7,11 @@
         $scope.name = "";
         $scope.numericValue = 0;
         
-        $scope.displayNumericValue = function () {
-            $scope.numericValue = calculateNumericValue($scope.name);
+        $scope.displayStringNumericValue = function () {
+            $scope.numericValue = calculateStringNumericValue($scope.name);
         };
         
-        function calculateNumericValue (string) {
+        function calculateStringNumericValue (string) {
             var numericValue = 0;
             for (var i = 0; i < string.length; i++) {
                 numericValue += string.charCodeAt(i);
